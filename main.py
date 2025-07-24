@@ -25,7 +25,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="Webscraping Project",
     version="1.0.0",
-    description="This is the Tech Challenge for Francisco Carvalho Student"
+    description="Projeto do Tech Challenge..."
 )
 
 books_result = []
@@ -199,6 +199,10 @@ def lista_todas_as_categorias_de_livros_disponiveis(db: Session = Depends(get_db
     categories = db.query(BookModel.category).distinct().all()
     return [category[0] for category in categories]
 
+
+#------------------------------------------------------------------------------------
+#---------------------- Checar conectividade da API ----------------------
+#------------------------------------------------------------------------------------
 @app.get("/api/v1/health", tags=["Completed"])
 def checar_conectividade_da_api():
     return {"goal": "Check API status and conectivity with data"}
