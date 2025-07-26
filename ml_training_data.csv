@@ -1,0 +1,701 @@
+price,rating,category,availability,target
+38.2,4,Nonfiction,1,1
+59.92,5,Food and Drink,1,0
+27.89,5,Young Adult,1,1
+14.08,5,Default,1,1
+10.79,3,Add a comment,1,0
+24.91,5,Food and Drink,1,1
+58.33,3,Suspense,1,0
+31.77,1,Contemporary,1,0
+49.31,1,Sequential Art,1,0
+51.75,5,Nonfiction,1,0
+25.83,2,Science,1,0
+28.82,1,Romance,1,0
+54.59,4,Default,1,0
+35.07,3,Fantasy,1,0
+44.07,1,Humor,1,0
+22.11,1,Fiction,1,0
+32.24,5,Spirituality,1,1
+35.43,4,Sequential Art,1,1
+53.63,2,Food and Drink,1,0
+58.08,4,Childrens,1,0
+47.8,3,Add a comment,1,0
+37.72,5,Default,1,1
+10.76,1,Default,1,0
+18.78,3,Fantasy,1,0
+22.0,4,Nonfiction,1,1
+39.5,5,Default,1,1
+20.5,3,Food and Drink,1,0
+19.63,1,Mystery,1,0
+42.72,1,Sequential Art,1,0
+26.09,1,Young Adult,1,0
+41.24,1,Romance,1,0
+15.28,5,Nonfiction,1,1
+55.84,4,Fiction,1,0
+44.81,4,Fantasy,1,0
+53.98,3,Romance,1,0
+48.64,1,Horror,1,0
+18.02,2,Default,1,0
+14.64,1,Young Adult,1,0
+37.6,2,Food and Drink,1,0
+59.15,4,Add a comment,1,0
+16.23,5,Default,1,1
+14.41,3,Sequential Art,1,0
+47.27,1,Default,1,0
+22.13,4,Add a comment,1,1
+30.81,1,Nonfiction,1,0
+37.19,3,Add a comment,1,0
+23.11,5,Nonfiction,1,1
+10.02,2,Add a comment,1,0
+13.86,3,Womens Fiction,1,0
+19.07,4,Science Fiction,1,1
+15.79,1,Historical,1,0
+51.96,3,Fiction,1,0
+11.84,1,Mystery,1,0
+29.4,1,Default,1,0
+51.22,2,History,1,0
+15.06,4,Nonfiction,1,1
+55.02,2,Default,1,0
+11.1,3,Romance,1,0
+52.15,3,Self Help,1,0
+53.49,2,Default,1,0
+52.65,4,Politics,1,0
+40.32,4,Fiction,1,0
+16.24,1,Add a comment,1,0
+45.17,2,Travel,1,0
+21.28,4,Add a comment,1,1
+57.84,5,Default,1,0
+36.05,4,Default,1,1
+27.7,4,Historical Fiction,1,1
+35.67,5,Science Fiction,1,1
+28.07,4,Classics,1,1
+42.14,3,Nonfiction,1,0
+41.14,4,Art,1,0
+11.88,3,Add a comment,1,0
+43.55,1,Default,1,0
+14.16,1,Nonfiction,1,0
+33.95,4,Sequential Art,1,1
+10.9,2,Sequential Art,1,0
+21.94,1,Womens Fiction,1,0
+21.71,4,Sequential Art,1,1
+49.43,4,Travel,1,0
+38.77,4,Poetry,1,1
+19.83,2,Nonfiction,1,0
+54.29,5,Autobiography,1,0
+41.56,1,Fiction,1,0
+42.38,1,Nonfiction,1,0
+47.82,4,Mystery,1,0
+38.16,4,Sequential Art,1,1
+48.67,2,Nonfiction,1,0
+33.23,1,Young Adult,1,0
+25.48,2,Sequential Art,1,0
+58.63,3,Classics,1,0
+24.7,3,History,1,0
+33.26,2,Nonfiction,1,0
+25.85,3,Fiction,1,0
+10.97,1,Crime,1,0
+24.73,3,Fiction,1,0
+50.27,5,Fiction,1,0
+46.02,3,Default,1,0
+11.38,5,Food and Drink,1,1
+30.6,3,Default,1,0
+30.54,1,Travel,1,0
+44.74,4,Science,1,0
+49.47,3,Horror,1,0
+13.2,3,Nonfiction,1,0
+49.05,3,Health,1,0
+23.82,5,Thriller,1,1
+37.86,4,Add a comment,1,1
+20.47,5,Christian Fiction,1,1
+18.51,4,Sequential Art,1,1
+25.4,3,Mystery,1,0
+28.9,1,Fiction,1,0
+14.36,2,Young Adult,1,0
+20.11,3,Default,1,0
+37.8,2,Spirituality,1,0
+23.21,3,Fiction,1,0
+41.67,4,Nonfiction,1,0
+37.6,5,Default,1,1
+14.39,4,Fiction,1,1
+23.32,1,Default,1,0
+56.68,2,Default,1,0
+47.11,2,Classics,1,0
+35.28,5,Default,1,1
+31.19,4,Music,1,1
+15.36,5,Adult Fiction,1,1
+11.83,5,Humor,1,1
+43.3,4,Science Fiction,1,0
+38.21,2,Nonfiction,1,0
+22.65,1,Young Adult,1,0
+46.35,1,Self Help,1,0
+19.27,4,Add a comment,1,1
+26.77,1,Historical Fiction,1,0
+52.11,2,Fantasy,1,0
+34.74,4,Romance,1,1
+46.33,2,Spirituality,1,0
+55.65,5,Spirituality,1,0
+17.03,3,Fiction,1,0
+37.34,5,Food and Drink,1,1
+53.51,1,Nonfiction,1,0
+37.1,4,Default,1,1
+43.69,4,Young Adult,1,0
+37.32,2,Music,1,0
+36.0,2,Default,1,0
+19.57,1,Sequential Art,1,0
+57.36,5,Science,1,0
+13.12,2,Academic,1,0
+56.43,1,Romance,1,0
+12.23,2,Nonfiction,1,0
+56.76,5,Default,1,0
+34.22,5,Fiction,1,1
+48.48,3,Fiction,1,0
+13.51,1,Nonfiction,1,0
+56.07,3,Childrens,1,0
+58.0,5,Fiction,1,0
+31.63,4,Nonfiction,1,1
+17.93,3,Default,1,0
+41.83,4,Nonfiction,1,0
+48.35,5,Mystery,1,0
+24.72,2,Fantasy,1,0
+48.94,2,Default,1,0
+20.27,1,Default,1,0
+45.07,2,New Adult,1,0
+47.02,3,Default,1,0
+49.53,1,Historical Fiction,1,0
+40.83,4,Young Adult,1,0
+18.97,1,Sequential Art,1,0
+44.18,4,Nonfiction,1,0
+51.74,1,Business,1,0
+56.51,5,Default,1,0
+51.22,3,Sports and Games,1,0
+20.88,5,Default,1,1
+34.95,4,Default,1,1
+36.91,1,Business,1,0
+33.92,3,Business,1,0
+39.45,5,New Adult,1,1
+45.84,3,Historical Fiction,1,0
+42.15,4,Fiction,1,0
+28.13,4,Young Adult,1,1
+20.55,2,Historical Fiction,1,0
+45.58,1,Nonfiction,1,0
+13.76,3,Science,1,0
+59.04,5,Autobiography,1,0
+29.0,1,Default,1,0
+32.61,3,Romance,1,0
+22.85,3,Childrens,1,0
+39.01,4,Historical Fiction,1,1
+48.27,5,Add a comment,1,0
+29.87,5,Historical,1,1
+34.2,2,Add a comment,1,0
+21.15,2,Biography,1,0
+40.87,1,Nonfiction,1,0
+55.91,4,History,1,0
+16.34,3,Fiction,1,0
+36.97,5,Horror,1,1
+32.49,3,Classics,1,0
+27.88,2,Sequential Art,1,0
+37.97,2,Religion,1,0
+51.07,2,Humor,1,0
+52.15,1,Poetry,1,0
+49.03,3,Default,1,0
+45.11,1,Nonfiction,1,0
+32.36,3,Default,1,0
+28.26,5,Add a comment,1,1
+42.21,4,Young Adult,1,0
+46.31,2,Young Adult,1,0
+35.66,5,Historical Fiction,1,1
+46.45,2,Default,1,0
+34.41,2,Childrens,1,0
+42.78,4,Fiction,1,0
+59.99,3,Romance,1,0
+40.12,2,Horror,1,0
+29.87,3,Sequential Art,1,0
+28.34,1,Childrens,1,0
+35.67,3,Add a comment,1,0
+42.57,3,Biography,1,0
+56.48,2,Add a comment,1,0
+34.79,2,Horror,1,0
+50.49,3,Add a comment,1,0
+25.55,1,Humor,1,0
+53.9,1,Sequential Art,1,0
+49.67,3,Fiction,1,0
+34.32,3,Food and Drink,1,0
+22.96,2,Fiction,1,0
+52.37,1,Fantasy,1,0
+36.8,3,Default,1,0
+36.89,1,Childrens,1,0
+47.72,2,Christian,1,0
+48.96,5,Womens Fiction,1,0
+51.32,5,Nonfiction,1,0
+13.82,2,Thriller,1,0
+14.02,4,Food and Drink,1,1
+15.85,3,Mystery,1,0
+19.49,4,Sequential Art,1,1
+36.29,5,New Adult,1,1
+44.58,2,Fiction,1,0
+46.03,1,Self Help,1,0
+14.44,5,Young Adult,1,1
+23.63,4,Young Adult,1,1
+40.2,4,Fiction,1,0
+26.12,2,Science Fiction,1,0
+50.96,1,Add a comment,1,0
+25.38,2,Sequential Art,1,0
+17.66,5,Spirituality,1,1
+12.29,5,Mystery,1,1
+10.6,4,Fiction,1,1
+10.79,4,Childrens,1,1
+35.61,3,Romance,1,0
+25.02,3,Fantasy,1,0
+48.05,2,Young Adult,1,0
+30.57,2,Add a comment,1,0
+17.27,5,Fiction,1,1
+45.75,4,Womens Fiction,1,0
+10.64,3,Sequential Art,1,0
+32.97,4,Historical Fiction,1,1
+57.83,1,Nonfiction,1,0
+59.45,1,Fiction,1,0
+46.08,5,Fantasy,1,0
+55.99,2,Romance,1,0
+29.64,4,Young Adult,1,1
+10.27,2,Default,1,0
+13.47,3,Childrens,1,0
+53.98,1,Mystery,1,0
+44.73,4,Fantasy,1,0
+24.04,1,Contemporary,1,0
+38.43,5,Default,1,1
+49.83,3,Default,1,0
+31.58,2,Default,1,0
+20.1,5,Food and Drink,1,1
+14.86,2,Young Adult,1,0
+16.64,1,Mystery,1,0
+16.28,5,Default,1,1
+25.37,5,Mystery,1,1
+50.26,2,Classics,1,0
+35.79,2,Add a comment,1,0
+23.59,1,Food and Drink,1,0
+22.6,4,Default,1,1
+39.58,2,Default,1,0
+53.68,4,Default,1,0
+19.02,1,Fiction,1,0
+43.68,3,Humor,1,0
+20.3,3,Mystery,1,0
+16.24,4,Romance,1,1
+15.71,4,Add a comment,1,1
+17.73,3,Classics,1,0
+22.1,1,Fiction,1,0
+10.16,3,Sequential Art,1,0
+49.97,4,Christian Fiction,1,0
+32.0,3,Default,1,0
+17.46,5,Young Adult,1,1
+46.29,1,Add a comment,1,0
+35.88,1,Short Stories,1,0
+48.78,1,Add a comment,1,0
+42.96,4,Science,1,0
+38.62,1,Default,1,0
+16.16,1,Add a comment,1,0
+48.8,3,Sequential Art,1,0
+13.66,2,Food and Drink,1,0
+33.14,3,Food and Drink,1,0
+14.54,2,History,1,0
+26.78,4,Classics,1,1
+25.08,1,Childrens,1,0
+22.5,3,Default,1,0
+21.96,4,Fiction,1,1
+56.02,4,Fantasy,1,0
+15.08,4,Classics,1,1
+41.05,1,Poetry,1,0
+44.84,5,Sports and Games,1,0
+41.56,5,Nonfiction,1,0
+21.96,1,Romance,1,0
+44.29,1,Womens Fiction,1,0
+12.61,5,Business,1,1
+31.95,3,Nonfiction,1,0
+16.26,2,Childrens,1,0
+11.05,5,Food and Drink,1,1
+11.48,3,Default,1,0
+54.11,3,Fiction,1,0
+48.63,4,Art,1,0
+20.59,5,Default,1,1
+56.54,2,Fiction,1,0
+40.45,2,Poetry,1,0
+51.32,3,Nonfiction,1,0
+45.56,3,Fiction,1,0
+27.88,3,Default,1,0
+12.75,4,Horror,1,1
+28.42,4,Religion,1,1
+46.64,2,Nonfiction,1,0
+38.0,2,Default,1,0
+39.24,5,Default,1,1
+30.03,5,Religion,1,1
+18.13,1,Default,1,0
+28.25,2,Food and Drink,1,0
+40.72,2,Default,1,0
+35.28,3,Mystery,1,0
+27.06,1,Nonfiction,1,0
+25.01,3,Horror,1,0
+55.85,1,New Adult,1,0
+14.75,5,Humor,1,1
+22.11,2,Sequential Art,1,0
+19.55,1,Food and Drink,1,0
+51.48,3,Default,1,0
+13.03,4,Science,1,1
+35.35,5,Young Adult,1,1
+46.49,5,Self Help,1,0
+25.89,2,Philosophy,1,0
+46.23,2,Default,1,0
+50.66,3,Nonfiction,1,0
+10.66,3,Childrens,1,0
+24.61,2,Default,1,0
+54.81,5,Novels,1,0
+43.19,4,Classics,1,0
+56.13,1,Childrens,1,0
+45.61,3,Sequential Art,1,0
+20.9,3,Romance,1,0
+21.36,4,Science Fiction,1,1
+21.8,3,History,1,0
+36.58,1,Default,1,0
+12.08,3,Self Help,1,0
+32.93,2,Classics,1,0
+40.17,1,Nonfiction,1,0
+44.48,5,History,1,0
+42.91,5,History,1,0
+32.01,2,Sequential Art,1,0
+17.76,1,Nonfiction,1,0
+41.93,2,Default,1,0
+46.42,2,Add a comment,1,0
+12.96,5,Childrens,1,1
+57.31,3,Poetry,1,0
+41.25,1,Food and Drink,1,0
+31.38,3,Add a comment,1,0
+54.4,1,Young Adult,1,0
+29.85,5,Default,1,1
+28.58,1,Classics,1,0
+34.13,5,Default,1,1
+58.09,2,Default,1,0
+54.23,5,History,1,0
+47.09,5,Romance,1,0
+49.46,4,Christian Fiction,1,0
+17.97,5,Christian Fiction,1,1
+34.77,1,Add a comment,1,0
+11.45,3,History,1,0
+49.51,1,Nonfiction,1,0
+54.81,1,Sequential Art,1,0
+19.21,1,Mystery,1,0
+13.33,3,Fantasy,1,0
+59.95,2,Psychology,1,0
+12.34,4,Food and Drink,1,1
+26.08,5,Travel,1,1
+18.77,1,Add a comment,1,0
+17.44,4,Philosophy,1,1
+51.36,5,Fiction,1,0
+12.36,3,Music,1,0
+43.61,5,Thriller,1,0
+46.47,3,Default,1,0
+28.85,3,Nonfiction,1,0
+52.87,3,Childrens,1,0
+50.54,5,Default,1,0
+55.35,1,Young Adult,1,0
+33.26,2,Science Fiction,1,0
+14.76,3,Add a comment,1,0
+43.59,5,Childrens,1,0
+11.82,2,Default,1,0
+28.8,3,Music,1,0
+40.85,1,Autobiography,1,0
+22.54,1,Childrens,1,0
+26.41,2,Nonfiction,1,0
+52.72,1,Default,1,0
+15.4,1,Paranormal,1,0
+11.87,2,Autobiography,1,0
+50.89,5,Poetry,1,0
+23.9,5,Default,1,1
+43.38,1,Philosophy,1,0
+46.01,4,Food and Drink,1,0
+55.5,5,Humor,1,0
+44.97,1,Fiction,1,0
+26.13,2,Default,1,0
+54.35,2,Nonfiction,1,0
+32.87,2,Default,1,0
+39.24,1,Thriller,1,0
+29.17,2,Sequential Art,1,0
+37.61,2,Add a comment,1,0
+58.75,4,Fantasy,1,0
+24.17,4,Young Adult,1,1
+48.13,5,Young Adult,1,0
+57.6,2,Autobiography,1,0
+15.42,5,Poetry,1,1
+23.4,1,Horror,1,0
+18.28,2,Childrens,1,0
+14.57,4,Young Adult,1,1
+44.88,2,Business,1,0
+50.1,1,Fiction,1,0
+16.28,1,Sequential Art,1,0
+30.6,4,Science,1,1
+10.0,5,Young Adult,1,1
+10.4,1,Psychology,1,0
+22.14,2,Default,1,0
+39.55,1,Biography,1,0
+59.71,3,Thriller,1,0
+43.62,5,Default,1,0
+36.5,2,Sequential Art,1,0
+58.87,4,Default,1,0
+14.07,3,Add a comment,1,0
+37.4,5,Add a comment,1,1
+21.55,5,Default,1,1
+13.92,1,Mystery,1,0
+20.29,4,Add a comment,1,1
+19.19,5,Erotica,1,1
+59.64,1,History,1,0
+39.39,4,Sequential Art,1,1
+35.01,2,Classics,1,0
+57.7,4,Mystery,1,0
+48.75,5,Fantasy,1,0
+39.72,1,Fiction,1,0
+47.22,1,Default,1,0
+25.02,1,Default,1,0
+42.16,3,Food and Drink,1,0
+41.32,5,Add a comment,1,0
+37.92,2,Sequential Art,1,0
+30.8,3,Nonfiction,1,0
+41.62,4,Sequential Art,1,0
+32.3,5,Fantasy,1,1
+43.7,2,History,1,0
+20.89,4,Mystery,1,1
+48.19,3,Biography,1,0
+20.93,1,Default,1,0
+32.38,1,Childrens,1,0
+37.51,4,Default,1,1
+24.72,2,Mystery,1,0
+57.35,5,Science,1,0
+29.48,3,Nonfiction,1,0
+57.25,3,Music,1,0
+44.1,4,Mystery,1,0
+20.12,5,Add a comment,1,1
+56.48,1,Default,1,0
+48.49,4,Womens Fiction,1,0
+42.4,1,Default,1,0
+25.83,3,Historical Fiction,1,0
+26.58,5,Fiction,1,1
+13.71,3,Mystery,1,0
+43.63,3,Sequential Art,1,0
+10.65,1,Science Fiction,1,0
+28.03,1,Fiction,1,0
+11.89,5,Sequential Art,1,1
+23.43,2,Default,1,0
+21.04,2,Fiction,1,0
+19.53,3,Nonfiction,1,0
+53.47,1,Young Adult,1,0
+37.25,2,Nonfiction,1,0
+22.16,2,Default,1,0
+52.94,2,Fantasy,1,0
+12.34,5,Fiction,1,1
+44.05,5,Default,1,0
+27.35,2,Nonfiction,1,0
+47.82,3,Sequential Art,1,0
+37.33,3,Travel,1,0
+45.22,3,Young Adult,1,0
+21.12,3,Young Adult,1,0
+57.82,5,Nonfiction,1,0
+26.33,5,Childrens,1,1
+28.08,4,Historical Fiction,1,1
+46.85,3,Add a comment,1,0
+33.78,3,Add a comment,1,0
+53.53,5,Fiction,1,0
+11.75,3,Sequential Art,1,0
+38.92,2,Romance,1,0
+31.22,2,Fantasy,1,0
+29.7,2,Classics,1,0
+44.92,3,Young Adult,1,0
+53.64,5,Poetry,1,0
+44.14,1,Default,1,0
+25.27,5,Romance,1,1
+21.0,3,Business,1,0
+43.14,1,Business,1,0
+32.34,2,Art,1,0
+56.5,4,Mystery,1,0
+15.94,5,Philosophy,1,1
+40.3,5,Nonfiction,1,0
+53.82,2,Fantasy,1,0
+56.91,4,Nonfiction,1,0
+39.24,3,Romance,1,0
+41.73,4,Young Adult,1,0
+23.88,1,Poetry,1,0
+11.64,5,Sequential Art,1,1
+52.22,4,Thriller,1,0
+16.89,5,Nonfiction,1,1
+30.48,4,Nonfiction,1,1
+55.53,5,Historical Fiction,1,0
+52.26,2,Fantasy,1,0
+45.13,3,Nonfiction,1,0
+57.74,4,Fantasy,1,0
+19.67,5,Default,1,1
+52.86,2,Default,1,0
+22.08,2,Childrens,1,0
+58.64,4,Fantasy,1,0
+55.91,1,Science,1,0
+19.22,2,Nonfiction,1,0
+38.89,5,Nonfiction,1,1
+29.64,3,Add a comment,1,0
+54.64,3,Childrens,1,0
+49.13,5,Fiction,1,0
+16.97,5,Historical Fiction,1,1
+52.79,5,Contemporary,1,0
+52.29,5,Sequential Art,1,0
+43.58,3,Womens Fiction,1,0
+25.98,4,Humor,1,1
+16.96,1,Default,1,0
+22.2,1,Nonfiction,1,0
+54.43,1,Add a comment,1,0
+30.89,5,Humor,1,1
+57.22,3,Classics,1,0
+57.62,5,Sequential Art,1,0
+39.51,5,Art,1,1
+26.26,4,Fiction,1,1
+58.32,5,Default,1,0
+52.98,5,Health,1,0
+47.51,4,Horror,1,0
+33.63,2,Poetry,1,0
+42.12,3,Sequential Art,1,0
+55.02,3,Default,1,0
+43.87,3,Fantasy,1,0
+21.57,5,Sequential Art,1,1
+11.89,2,Nonfiction,1,0
+56.27,3,Psychology,1,0
+30.95,4,Poetry,1,1
+16.77,3,Nonfiction,1,0
+33.17,4,Default,1,1
+51.48,1,Science Fiction,1,0
+10.92,1,Science Fiction,1,0
+40.76,3,Add a comment,1,0
+43.29,3,Fantasy,1,0
+10.29,4,Art,1,1
+38.71,3,Nonfiction,1,0
+38.39,2,Sequential Art,1,0
+24.8,4,Mystery,1,1
+43.54,2,Nonfiction,1,0
+53.13,3,Default,1,0
+20.66,4,Poetry,1,1
+29.93,5,Philosophy,1,1
+22.06,4,Fantasy,1,1
+56.02,1,Fantasy,1,0
+27.12,2,Young Adult,1,0
+34.5,1,Default,1,0
+31.58,5,Music,1,1
+34.0,3,Nonfiction,1,0
+31.45,3,Sequential Art,1,0
+51.77,3,Poetry,1,0
+50.83,3,Young Adult,1,0
+34.06,3,Nonfiction,1,0
+50.35,4,Young Adult,1,0
+56.06,1,Nonfiction,1,0
+40.28,5,Sequential Art,1,0
+33.14,1,Sequential Art,1,0
+59.98,3,Fiction,1,0
+13.22,4,Default,1,1
+11.23,4,Default,1,1
+19.69,1,Womens Fiction,1,0
+55.51,1,Add a comment,1,0
+20.22,4,Default,1,1
+15.38,5,Sequential Art,1,1
+59.9,3,Nonfiction,1,0
+37.34,1,Historical Fiction,1,0
+54.89,1,Horror,1,0
+28.48,1,Sequential Art,1,0
+25.77,1,Christian,1,0
+14.27,4,Poetry,1,1
+56.76,4,Sequential Art,1,0
+29.65,1,Fantasy,1,0
+16.88,3,Default,1,0
+36.39,5,Young Adult,1,1
+35.92,2,Nonfiction,1,0
+28.45,4,Nonfiction,1,1
+43.29,3,New Adult,1,0
+21.72,4,Fantasy,1,1
+11.68,4,Nonfiction,1,1
+25.91,5,Add a comment,1,1
+34.96,4,Science Fiction,1,1
+19.18,4,Womens Fiction,1,1
+29.14,5,Nonfiction,1,1
+20.02,1,Philosophy,1,0
+43.04,2,Nonfiction,1,0
+43.58,3,Default,1,0
+54.0,5,Christian,1,0
+30.52,3,Food and Drink,1,0
+20.79,5,Historical Fiction,1,1
+49.98,4,Nonfiction,1,0
+20.9,2,Default,1,0
+56.88,4,Travel,1,0
+15.77,1,Nonfiction,1,0
+47.84,1,Add a comment,1,0
+37.55,1,Science,1,0
+54.21,2,Mystery,1,0
+37.34,4,Sequential Art,1,1
+38.13,5,Default,1,1
+21.36,1,Horror,1,0
+21.07,5,Historical Fiction,1,1
+40.79,2,Add a comment,1,0
+41.81,1,Young Adult,1,0
+52.88,4,Childrens,1,0
+41.6,3,Default,1,0
+18.46,3,Default,1,0
+56.4,2,Fantasy,1,0
+16.28,2,Science,1,0
+43.27,4,Add a comment,1,0
+12.16,5,Fantasy,1,1
+44.28,1,Fantasy,1,0
+20.02,5,Music,1,1
+32.35,3,Nonfiction,1,0
+24.57,2,Nonfiction,1,0
+23.05,5,Mystery,1,1
+47.44,2,Default,1,0
+36.83,5,Young Adult,1,1
+15.97,4,Romance,1,1
+27.26,2,Mystery,1,0
+49.67,4,Default,1,0
+16.62,3,Historical Fiction,1,0
+36.52,2,Sequential Art,1,0
+56.7,5,Nonfiction,1,0
+51.15,1,Fiction,1,0
+28.77,3,Food and Drink,1,0
+15.44,4,Sequential Art,1,1
+19.09,1,Add a comment,1,0
+10.56,3,Horror,1,0
+48.51,3,Add a comment,1,0
+38.49,5,Nonfiction,1,1
+45.14,1,Fiction,1,0
+41.82,4,Default,1,0
+45.05,5,Music,1,0
+31.04,1,Psychology,1,0
+39.77,3,Romance,1,0
+12.51,5,Nonfiction,1,1
+39.07,5,Fiction,1,1
+13.9,3,Default,1,0
+36.28,2,History,1,0
+27.41,1,Fiction,1,0
+26.66,5,Nonfiction,1,1
+37.05,5,Add a comment,1,1
+48.74,1,Science Fiction,1,0
+40.44,4,Sports and Games,1,0
+20.96,4,Sequential Art,1,1
+14.1,5,Sequential Art,1,1
+27.43,2,Nonfiction,1,0
+26.8,3,Mystery,1,0
+55.06,4,Nonfiction,1,0
+21.8,1,Default,1,0
+33.34,4,Business,1,1
+58.81,5,Autobiography,1,0
+38.38,2,Mystery,1,0
+12.87,1,Romance,1,0
+26.41,3,Fiction,1,0
+11.83,2,Default,1,0
+36.95,1,Historical Fiction,1,0
+51.99,4,Sequential Art,1,0
+25.52,1,History,1,0
+31.05,3,Nonfiction,1,0
+34.98,2,Add a comment,1,0
+27.8,1,Nonfiction,1,0
+39.67,5,Christian Fiction,1,1
+39.36,2,Nonfiction,1,0
+19.15,2,Default,1,0
+56.63,3,Fantasy,1,0
+14.82,2,Classics,1,0
+27.37,4,Default,1,1

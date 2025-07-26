@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException, Query, Path, status, Body
 from fastapi.security import OAuth2PasswordRequestForm
 from auth import create_access_token, create_refresh_token, get_current_user
 from pydantic import BaseModel, field_validator
-from typing import List
+from typing import List, Dict, Any
 from threading import Thread
 from sqlalchemy import func
 from sqlalchemy.orm import Session
@@ -18,6 +18,11 @@ from dependencies import get_db
 from users import users
 from auth import ACCESS_TOKEN_EXPIRE_MINUTES, SECRET_KEY, ALGORITHM
 
+import csv
+import random
+import pickle
+import numpy as np
+
 
 Base.metadata.create_all(bind=engine)
 
@@ -31,12 +36,14 @@ app = FastAPI(
 books_result = []
 
 class BookSchema(BaseModel):
+    id: int
     title: str
     price: float
     rating: str
     availability: str
     category: str
     image_url: str
+    target: int
 
     @field_validator("price")
     def format_price(cls, v):
@@ -104,20 +111,27 @@ def scrape_books(db: Session = Depends(get_db),username:str = Depends(get_curren
 
         # Clear table before inserting new records (optional)
         db.query(BookModel).delete()
+    def task():
+        books = scrape_all_books()
+        save_to_csv(books, "books.csv")
+
+        # Clear table before inserting new records (optional)
+        db.query(BookModel).delete()
         db.commit()
 
-        
         # Save to DB
         for book in books:
             cleaned_price = ''.join(c for c in book["price"] if c.isdigit() or c == '.')
-
+            rating_num = rating_order.get(book["rating"], 0)
+            target = 1 if rating_num >= 4 and float(cleaned_price) < 40 else 0
             db_book = BookModel(
                 title=book["title"],
                 price=cleaned_price,
                 rating=book["rating"],
                 availability=book["availability"],
                 category=book["category"],
-                image_url=book["image_url"]
+                image_url=book["image_url"],
+                target=target
             )
             db.add(db_book)
         db.commit()
@@ -277,3 +291,84 @@ def estatisticas_detalhadas_por_categoria(db: Session = Depends(get_db)):
 # @app.post("api/v1/auth/refresh", tags=["Not developed yet"])
 # def token():
 #     return {"goal":"Renew token - JWWT Authentication"}
+
+#----------------------------------------------------------------------------------------
+#------------------------ Dados formatados para features --------------------------------
+#----------------------------------------------------------------------------------------
+
+@app.get("/api/v1/ml/features", tags=["ML"])
+def get_ml_features(db: Session = Depends(get_db)):
+    books = db.query(BookModel).all()
+    features = []
+    for book in books:
+        features.append({
+            "price": book.price,
+            "rating": rating_order.get(book.rating, 0),
+            "category": book.category,
+            "availability": 1 if "In stock" in book.availability else 0,
+            "target": book.target
+        })
+    # Gera arquivo CSV
+    with open("ml_features.csv", "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["price", "rating", "category", "availability", "target"])
+        writer.writeheader()
+        writer.writerows(features)
+    return features
+
+#----------------------------------------------------------------------------------------
+#------------------------ Dataset para treinamento --------------------------------------
+#----------------------------------------------------------------------------------------
+
+@app.get("/api/v1/ml/training-data", tags=["ML"])
+def get_training_data(db: Session = Depends(get_db)):
+
+    books = db.query(BookModel).all()
+    data = []
+    for book in books:
+        data.append({
+            "price": book.price,
+            "rating": rating_order.get(book.rating, 0),
+            "category": book.category,
+            "availability": 1 if "In stock" in book.availability else 0,
+            "target": book.target
+        })
+    # Embaralha e divide em 70% para treinamento
+    random.shuffle(data)
+    split_idx = int(len(data) * 0.7)
+    train_data = data[:split_idx]
+    # Gera arquivo CSV
+    with open("ml_training_data.csv", "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["price", "rating", "category", "availability", "target"])
+        writer.writeheader()
+        writer.writerows(train_data)
+    return train_data
+
+#----------------------------------------------------------------------------------------
+#------------------------ Endpoint para receber predições -------------------------------
+#----------------------------------------------------------------------------------------
+
+class MLFeatures(BaseModel):
+    price: float
+    rating: int
+    category: str
+    availability: int
+
+
+@app.post("/api/v1/ml/predictions", tags=["ML"])
+def ml_predictions(features: MLFeatures):
+    # Carrega o modelo treinado
+    with open("book_recommendation_model.pkl", "rb") as f:
+        model = pickle.load(f)
+    # Carrega o encoder de categoria
+    with open("category_encoder.pkl", "rb") as f:
+        category_encoder = pickle.load(f)
+    # Transforma a categoria
+    category_encoded = int(category_encoder.transform([features.category])[0])
+    # Prepara os dados para o modelo
+    input_data = np.array([
+        [features.price, features.rating, category_encoded, features.availability]
+    ])
+    # Predição
+    pred = model.predict(input_data)
+    recomendado = bool(pred[0]) if hasattr(pred[0], '__bool__') else pred[0] == 1
+    return {"recomendado": recomendado}

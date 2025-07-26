@@ -49,7 +49,7 @@ def scrape_all_books():
         books = get_book_data(soup)
         all_books.extend(books)
 
-        break
+        
 
         next_button = soup.select_one("li.next a")
         if next_button:

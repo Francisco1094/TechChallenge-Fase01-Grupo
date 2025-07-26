@@ -11,3 +11,4 @@ class Book(Base):
     rating= Column(String, index=True)
     availability= Column(String, index=True)
     image_url= Column(String, index=True)
+    target = Column(Integer, default=0)
