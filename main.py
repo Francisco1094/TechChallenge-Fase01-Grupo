@@ -6,9 +6,8 @@ from typing import List, Dict, Any
 from threading import Thread
 from sqlalchemy import func
 from sqlalchemy.orm import Session
-
-from jose import JWTError, jwt
-from datetime import datetime, timedelta
+ 
+from datetime import timedelta
 
 from scrapping import scrape_all_books, save_to_csv
 
@@ -16,7 +15,8 @@ from database import Base, engine
 from models import Book as BookModel
 from dependencies import get_db
 from users import users
-from auth import ACCESS_TOKEN_EXPIRE_MINUTES, SECRET_KEY, ALGORITHM
+from config import ACCESS_TOKEN_EXPIRE_MINUTES, SECRET_KEY, ALGORITHM
+
 
 import csv
 import random
@@ -72,6 +72,7 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
     # Create tokens
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(data={"sub":form_data.username}, expires_delta=access_token_expires)
+
     refresh_token = create_refresh_token(data={"sub": form_data.username})
 
     return{
@@ -105,12 +106,6 @@ async def refresh_token(refresh_token: str = Body(...)):
 #----------------------------------------------------------
 @app.get("/api/v1/scrape", tags=["Completed"])
 def scrape_books(db: Session = Depends(get_db),username:str = Depends(get_current_user)):
-    def task():
-        books = scrape_all_books()
-        save_to_csv(books, "books.csv")
-
-        # Clear table before inserting new records (optional)
-        db.query(BookModel).delete()
     def task():
         books = scrape_all_books()
         save_to_csv(books, "books.csv")
