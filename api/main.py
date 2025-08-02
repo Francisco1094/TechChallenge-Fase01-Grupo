@@ -9,13 +9,13 @@ from sqlalchemy.orm import Session
  
 from datetime import timedelta
 
-from scrapping import scrape_all_books, save_to_csv
+from scripts.scrapping import scrape_all_books, save_to_csv
 
-from database import Base, engine
-from models import Book as BookModel
-from dependencies import get_db
+from database.database import Base, engine
+from models.models import Book as BookModel
+from database.dependencies import get_db
 from users import users
-from config import ACCESS_TOKEN_EXPIRE_MINUTES, SECRET_KEY, ALGORITHM
+from scripts.config import ACCESS_TOKEN_EXPIRE_MINUTES, SECRET_KEY, ALGORITHM
 
 
 import csv
