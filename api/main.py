@@ -1,12 +1,12 @@
 from fastapi import FastAPI, Depends, HTTPException, Query, Path, status, Body
 from fastapi.security import OAuth2PasswordRequestForm
-from auth import create_access_token, create_refresh_token, get_current_user
+from .auth import create_access_token, create_refresh_token, get_current_user
 from pydantic import BaseModel, field_validator
 from typing import List, Dict, Any
 from threading import Thread
 from sqlalchemy import func
 from sqlalchemy.orm import Session
- 
+from jose import jwt, JWTError
 from datetime import timedelta
 
 from scripts.scrapping import scrape_all_books, save_to_csv
@@ -14,7 +14,7 @@ from scripts.scrapping import scrape_all_books, save_to_csv
 from database.database import Base, engine
 from models.models import Book as BookModel
 from database.dependencies import get_db
-from users import users
+from .users import users
 from scripts.config import ACCESS_TOKEN_EXPIRE_MINUTES, SECRET_KEY, ALGORITHM
 
 

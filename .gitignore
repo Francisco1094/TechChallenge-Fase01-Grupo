@@ -1,7 +1,42 @@
+# Environment
 venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.db
+.venv/
 .env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+fiap.db
+
+# Machine Learning Models
+*.pkl
+*.model
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# CSV Files (generated)
+books.csv
+ml_features.csv
+ml_training_data.csv
