@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException, Query, Path, status, Body
 from fastapi.security import OAuth2PasswordRequestForm
-from auth import create_access_token, create_refresh_token, get_current_user
+from api.auth import create_access_token, create_refresh_token, get_current_user
 from pydantic import BaseModel, field_validator
 from typing import List, Dict, Any
 from threading import Thread
