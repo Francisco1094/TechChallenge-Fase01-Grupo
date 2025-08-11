@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import altair as alt
 
-API_URL = "http://127.0.0.1:8000/api/v1/monitoring/dashboard"
+API_URL = "https://techchalangerapi.onrender.com/api/v1/monitoring/dashboard"
 
 st.set_page_config(page_title="Dashboard de Monitoramento", layout="wide")
 st.title("📊 Dashboard de Monitoramento")

@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Required only for SQLite (avoids threading issues)
-SQLALCHEMY_DATABASE_URL = "sqlite:///./fiap.db"
+SQLALCHEMY_DATABASE_URL = "sqlite:///./database/fiap.db"
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}

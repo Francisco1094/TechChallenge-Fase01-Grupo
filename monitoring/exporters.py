@@ -78,7 +78,6 @@ class MetricsExporter:
     def export_current_metrics(self) -> Dict[str, Any]:
         """Exporta métricas atuais - DADOS REAIS"""
         logs = self._read_structured_logs(since=datetime.now() - timedelta(hours=1))
-        # print("##",logs)
         prometheus_metrics = self._extract_prometheus_metrics()
         # Calcular métricas reais dos logs
         http_requests = [log for log in logs 
@@ -90,7 +89,6 @@ class MetricsExporter:
         error_events = [log for log in logs 
                        if log.get('record', {}).get('extra', {}).get('event_type') == 'error']
         
-        # print("@@",http_requests)
         return {
             "total_requests": len(http_requests),
             "success_rate": self._calculate_real_success_rate(http_requests),
@@ -99,14 +97,13 @@ class MetricsExporter:
             "error_rate_5xx": self._calculate_real_error_rate(http_requests, "5xx"),
             "error_rate_4xx": self._calculate_real_error_rate(http_requests, "4xx"),
             "failed_logins_rate": self._calculate_real_failed_logins_rate(business_events),
-            "current_timestamp": datetime.utcnow().isoformat(),
-            "http_requests": logs,
+            "current_timestamp": datetime.now().isoformat(),
             "data_source": "real_logs_and_prometheus"
         }
     
     def export_historical_data(self, hours: int = 24) -> Dict[str, List[Dict]]:
         """Exporta dados históricos - DADOS REAIS"""
-        since = datetime.utcnow() - timedelta(hours=hours)
+        since = datetime.now() - timedelta(hours=hours)
         logs = self._read_structured_logs(since=since)
         
         return {
@@ -237,7 +234,7 @@ class MetricsExporter:
         """Timeline real de métricas de sistema do Prometheus"""
         import psutil
         
-        current_time = datetime.utcnow()
+        current_time = datetime.now()
         timeline = []
         
         timeline.append({
@@ -258,7 +255,7 @@ class MetricsExporter:
         for error in error_events:
             extra = error.get('record', {}).get('extra', {})
             events.append({
-                "timestamp": error.get('parsed_timestamp', datetime.utcnow()).isoformat(),
+                "timestamp": error.get('parsed_timestamp', datetime.now()).isoformat(),
                 "level": "ERROR",
                 "message": extra.get('error_message', 'Unknown error'),
                 "error_type": extra.get('error_type', 'Unknown'),
