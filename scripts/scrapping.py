@@ -1,7 +1,10 @@
+import time
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import urllib3
+
+from monitoring.middleware import BusinessEventTracker
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 base_url= "https://books.toscrape.com/"
@@ -39,8 +42,28 @@ def get_book_data(soup):
     return books
 
 def scrape_all_books():
+
+    try:
+        from monitoring import BusinessEventTracker
+    except ImportError:
+        # Fallback se não conseguir importar
+        class BusinessEventTracker:
+            @staticmethod
+            def track_scraping_start():
+                print("Scraping started")
+            @staticmethod
+            def track_scraping_progress(page, books, total=None):
+                print(f"Page {page} completed: {books} books")
+            @staticmethod
+            def track_scraping_complete(total, duration):
+                print(f"Scraping completed: {total} books in {duration:.2f}s")
+    
     all_books = []
-    page_url = base_url +"catalogue/page-1.html"
+    page_url = base_url + "catalogue/page-1.html"
+    page_number = 1
+
+    BusinessEventTracker.track_scraping_start()
+    start_time = time.time()
 
     while True:
         print(f"Scraping {page_url}")
@@ -49,15 +72,82 @@ def scrape_all_books():
         books = get_book_data(soup)
         all_books.extend(books)
 
-        
+        BusinessEventTracker.track_scraping_progress(
+            page_number=page_number,
+            books_found=len(books),
+            total_pages=50
+        )
 
         next_button = soup.select_one("li.next a")
         if next_button:
             next_href = next_button["href"]
             page_url = urljoin(page_url, next_href)
+            page_number += 1
         else:
             break
+    
+    duration = time.time() - start_time
+    BusinessEventTracker.track_scraping_complete(
+        total_books=len(all_books),
+        duration_seconds=duration
+    )
 
+    return all_books
+
+def scrape_all_books_with_progress(callback_func=None):
+    """Scraping com callback para atualizar progresso em tempo real"""
+    
+    try:
+        from monitoring import BusinessEventTracker
+    except ImportError:
+        class BusinessEventTracker:
+            @staticmethod
+            def track_scraping_start():
+                pass
+            @staticmethod
+            def track_scraping_progress(*args):
+                pass
+            @staticmethod
+            def track_scraping_complete(*args):
+                pass
+    
+    all_books = []
+    page_url = base_url + "catalogue/page-1.html"
+    page_number = 1
+    
+    BusinessEventTracker.track_scraping_start()
+    start_time = time.time()
+    
+    while True:
+        print(f"Scraping {page_url}")
+        response = requests.get(page_url, verify=False)
+        soup = BeautifulSoup(response.text, "html.parser")
+        books = get_book_data(soup)
+        all_books.extend(books)
+        
+        if callback_func:
+            callback_func(page_number, len(books), len(all_books))
+        
+        BusinessEventTracker.track_scraping_progress(
+            page_number=page_number,
+            books_found=len(books),
+            total_pages=50
+        )
+        
+        next_button = soup.select_one("li.next a")
+        if next_button:
+            next_href = next_button["href"]
+            page_url = urljoin(page_url, next_href)
+            page_number += 1
+        else:
+            break
+    
+    duration = time.time() - start_time
+    BusinessEventTracker.track_scraping_complete(
+        total_books=len(all_books),
+        duration_seconds=duration
+    )
+    
     return all_books
 
 def save_to_csv(books, filename):
